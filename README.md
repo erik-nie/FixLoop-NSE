@@ -13,9 +13,10 @@ It is not fully tested, so please let me know if something goes wrong.
 
 # Getting it to work
 - Install python 3: [python 3](https://www.python.org/downloads/)   
-installation of Python is straight forward (make sure to include python to the Path, this is an option during installation)
-- download wavfile (enhanced): [wavfile](https://gist.github.com/josephernest/3f22c5ed5dabf1815f16efa8fa53d476)
-- in a terminal window install numpy: "pip install numpy"  
+installation of Python is straight forward (make sure to include python to the Path, this is an option during installation)  
+- Download this fixloop.py
+- Download wavfile.py (enhanced): [wavfile.py](https://gist.github.com/josephernest/3f22c5ed5dabf1815f16efa8fa53d476)
+- In a terminal window install numpy: "pip install numpy"  
 (run cmd for windows, terminal for MacOs)
 
 - Create a simple project with Nord Sample editor:  
