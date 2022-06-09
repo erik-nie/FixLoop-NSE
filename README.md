@@ -1,5 +1,15 @@
 # FixLoop-NSE
-Adjust loop points in Nord Sample Editor from loop points in used wav files
+Adjust loop points in Nord Sample Editor from loop points in used wav files.
+
+Some wav files have loop markers that can be inserted by loop editors or already in.  
+The Nord Sample Editor does not read those loop markers. So you need to re-loop them in the Nord Sample editor.
+Some external loop programs have better loop options, like different fade curves and smarter detection of loop points.
+I'll recommend [Endless Wav](https://www.bjoernbojahr.de/) for this.
+
+This Python script will search in the .nsmpproj file for the included wav files, will get the loop markers from that wav file and update the loop point in the .nsmpproj file.  
+
+It is not fully tested, so please let me know if something goes wrong.
+
 
 # Getting it to work
 - Install python 3: [python 3](https://www.python.org/downloads/)   
