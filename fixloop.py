@@ -1,12 +1,6 @@
 # fixloop.py
 #
-# install python 3
-# download wavfile (enhanced) #https://gist.github.com/josephernest/3f22c5ed5dabf1815f16efa8fa53d476
-# pip install numpy
-# create a simple project with Nord Sample editor: import all samples and assign them to zones if not done already
-# put samples, projectfile, wavfile.py and fixloop.py in the same folder
-# python fixloop.py -> will open all project files in folder and tries to find matching .wav files and transfers it's loop points and sets crossfade to 0.
-# a copy of the project file is written with a prefix "_"
+# see https://github.com/erik-nie/FixLoop-NSE
 
 import wavfile 
 import glob
@@ -15,6 +9,7 @@ import re
 for p in glob.glob("*.nsmpproj"):
     if p[0]=="_":
         continue
+
     print("=============[ "+p+" ]=============")
     
     proj_file = open(p, "r")
