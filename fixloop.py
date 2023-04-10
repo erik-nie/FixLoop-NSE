@@ -21,8 +21,8 @@ for p in glob.glob("*.nsmpproj"):
             r = wavfile.read(filename,readloops=True)
             start = r[3][0][0]
             end = r[3][0][1]
-        except:
-            print(filename+" has no loops")
+        except Exception as err:
+            print(f"{filename=} Unexpected {err=}, {type(err)=}")
             continue
         
         
