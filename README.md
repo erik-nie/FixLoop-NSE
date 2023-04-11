@@ -32,3 +32,8 @@ This will open all project files in folder and tries to find matching .wav files
 
 - a copy of the project file is written with a prefix "_"
 - Open the new project file with the prefix, check the loops and generate the Nord Sample file and transfer. 
+
+# CheckLoopPoints
+Is a simple tool to recursively traverses all folders from current folder and shows loop points if they can be found
+The enhanced version of wavfile.py is needed in the same folder.
+
