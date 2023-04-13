@@ -21,8 +21,10 @@ for p in glob.glob("*.nsmpproj"):
             r = wavfile.read(filename,readloops=True)
             start = r[3][0][0]
             end = r[3][0][1]
-        except Exception as err:
-            print(f"{filename=} Unexpected {err=}, {type(err)=}")
+        #except Exception as err:
+            #print(f"{filename=} Unexpected {err=}, {type(err)=}")
+        except Exception:
+            print(filename + " No loop points found")
             continue
         
         
@@ -48,7 +50,7 @@ for p in glob.glob("*.nsmpproj"):
                 if ll[i].find("m_loopXFadeLengthLong = ") > -1:
                     ll[i] = "      m_loopXFadeLengthLong = 0.00000\n"
                 if ll[i].find("}") > -1:
-                    print(filename + "ID:"+id+" start:", str(start), " end:" + str(end) + " len:", str(end-start))
+                    print(filename + " ID:"+id+" start:", str(start), " end:" + str(end) + " len:", str(end-start))
                     #foundZone=False
                     break
                         
