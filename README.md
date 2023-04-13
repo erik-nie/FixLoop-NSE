@@ -35,5 +35,5 @@ This will open all project files in folder and tries to find matching .wav files
 
 # CheckLoopPoints
 Is a simple tool to recursively traverses all folders from current folder and shows loop points if they can be found
-The enhanced version of wavfile.py is needed in the same folder.
+The file wavfile.py from this repository is needed in the same folder.
 
