@@ -33,14 +33,15 @@ This will open all project files in folder and tries to find matching .wav files
 - a copy of the project file is written with a prefix "_"
 - Open the new project file with the prefix, check the loops and generate the Nord Sample file and transfer. 
 
-# Experimental fixloop.exe runtime version for Windows
-No need to install Python.
-Just create the project as described above, put wav files, projectfile and fixloop.exe in the same folder 
-and run fixloop.exe by double clicking, or to run it from the commandline to see all output
-[fixloop.exe](https://qsheets.eriknie.synology.me/)
-The file can be downloaded from on the bottom of the webpage 
-
 # CheckLoopPoints
 Is a simple tool to recursively traverses all folders from current folder and shows loop points if they can be found
 The file wavfile.py from this repository is needed in the same folder.
+
+# Experimental runtime version for Windows
+No need to install Python.
+Just create the project as described above, put wav files, projectfile and fixloop.exe in the same folder 
+and run fixloop.exe by double clicking, or to run it from the commandline to see all output
+[fixloop.exe & checklooppoints.exe](https://qsheets.eriknie.synology.me/)
+The files can be downloaded from on the bottom of the webpage 
+
 
