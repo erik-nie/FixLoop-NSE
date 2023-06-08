@@ -25,7 +25,8 @@ installation of Python is straight forward (make sure to include python to the P
 -> Select all zones and select Loop  
 -> Save Project  
 
-- put samples (wav files), projectfile (.nsmpproj), wavfile.py and fixloop.py in the same folder
+
+- put samples (wav files), projectfile (.nsmpproj), wavfile.py and fixloop.py in the same folder or work from a consolodated project. Put the fixloop.py and wavefile.py file in the same folder as the projectfile
 
 - run application from terminal/: python fixloop.py  
 This will open all project files in folder and tries to find matching .wav files and transfers it's loop points and sets crossfade to 0.
@@ -40,8 +41,9 @@ The file wavfile.py from this repository is needed in the same folder.
 # Experimental runtime version for Windows
 No need to install Python.
 Just create the project as described above, put wav files, projectfile and fixloop.exe in the same folder 
-and run fixloop.exe by double clicking, or to run it from the commandline to see all output
+and run fixloop.exe by double clicking, or to run it from the commandline to see all output.
+This version also scan the Media folder of a consolidated project
 [fixloop.exe & checklooppoints.exe](https://qsheets.eriknie.synology.me/)
-The files can be downloaded from on the bottom of the webpage 
+The files can be downloaded from on the bottom of that webpage 
 
 

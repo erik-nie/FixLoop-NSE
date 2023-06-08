@@ -6,6 +6,7 @@ import wavfile
 import glob
 import re
 
+print("fixloop version 1.31")
 for p in glob.glob("*.nsmpproj"):
     if p[0]=="_":
         continue
@@ -16,7 +17,8 @@ for p in glob.glob("*.nsmpproj"):
     ll = proj_file.readlines()
 
     # for all wav files get loop points and inject them into the nsmpproj file
-    for filename in glob.glob("*.wav"):
+    fileNames = glob.glob('Media/*.wav') + glob.glob('*.wav')   
+    for filename in fileNames:
         try:
             r = wavfile.read(filename,readloops=True)
             start = r[3][0][0]
